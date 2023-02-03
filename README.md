@@ -19,3 +19,12 @@ If you'd like to run the WritingPrompts experiments, you'll need to download the
 **Intermediate results are saved in `tmp_results/`. If your experiment completes successfully, the results will be moved into the `results` directory.
 
 ## Citing the paper
+If our work is useful for your own, you can cite us with the following BibTex entry:
+
+    @misc{mitchell2023detectgpt,
+        url = {https://arxiv.org/abs/2301.11305},
+        author = {Mitchell, Eric and Lee, Yoonho and Khazatsky, Alexander and Manning, Christopher D. and Finn, Chelsea},
+        title = {DetectGPT: Zero-Shot Machine-Generated Text Detection using Probability Curvature},
+        publisher = {arXiv},
+        year = {2023},
+    }

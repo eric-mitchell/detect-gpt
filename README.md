@@ -28,3 +28,10 @@ If our work is useful for your own, you can cite us with the following BibTex en
         publisher = {arXiv},
         year = {2023},
     }
+    @article{meister+al.pre22,
+        author = {Meister, Clara and Pimentel, Tiago and Wiher, Gian and Cotterell, Ryan},
+        publisher = {arXiv},
+        title = {Locally Typical Sampling},
+        url = {https://arxiv.org/abs/2202.00666},
+        year = {2022}
+}

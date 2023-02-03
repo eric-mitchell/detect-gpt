@@ -1,0 +1,4 @@
+python run.py --output_name supervised --base_model_name sberbank-ai/mGPT --mask_filling_model_name google/mt5-xl --n_perturbation_list 1,10,100 --n_samples 200 --pct_words_masked 0.3 --span_length 2 --dataset english
+python run.py --output_name supervised --base_model_name sberbank-ai/mGPT --mask_filling_model_name google/mt5-xl --n_perturbation_list 1,10,100 --n_samples 200 --pct_words_masked 0.3 --span_length 2 --dataset german
+python run.py --output_name supervised --base_model_name stanford-crfm/pubmedgpt --mask_filling_model_name t5-11b --n_perturbation_list 1,10,100 --n_samples 200 --pct_words_masked 0.3 --span_length 2 --dataset pubmed
+python run.py --output_name supervised --base_model_name gpt2-xl --mask_filling_model_name t5-11b --n_perturbation_list 1,10,100 --n_samples 200 --pct_words_masked 0.3 --span_length 2

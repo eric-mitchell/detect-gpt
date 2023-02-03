@@ -1,0 +1,3 @@
+python run.py --output_name openai --batch_size 5 --openai_model davinci --mask_filling_model_name t5-11b --n_perturbation_list 1,10,75 --n_samples 150 --pct_words_masked 0.3 --span_length 2 --do_top_p --top_p 0.9 --mask_top_p 0.95 --dataset pubmed
+python run.py --output_name openai --batch_size 5 --openai_model davinci --mask_filling_model_name t5-11b --n_perturbation_list 1,10,75 --n_samples 150 --pct_words_masked 0.3 --span_length 2 --do_top_p --top_p 0.9 --mask_top_p 0.95 --dataset writing
+python run.py --output_name openai --batch_size 5 --openai_model davinci --mask_filling_model_name t5-11b --n_perturbation_list 1,10,75 --n_samples 150 --pct_words_masked 0.3 --span_length 2 --do_top_p --top_p 0.9 --mask_top_p 0.95

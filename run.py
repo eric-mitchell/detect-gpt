@@ -236,6 +236,8 @@ def sample_from_model(texts, min_words=55, prompt_tokens=30):
                 sampling_kwargs['top_p'] = args.top_p
             elif args.do_top_k:
                 sampling_kwargs['top_k'] = args.top_k
+            elif args.do_typical_p:
+                sampling_kwargs['typical_p'] = args.typical_p
             min_length = 50 if args.dataset in ['pubmed'] else 150
             outputs = base_model.generate(**all_encoded, min_length=min_length, max_length=200, do_sample=True, **sampling_kwargs, pad_token_id=base_tokenizer.eos_token_id, eos_token_id=base_tokenizer.eos_token_id)
             decoded = base_tokenizer.batch_decode(outputs, skip_special_tokens=True)
@@ -766,6 +768,8 @@ if __name__ == '__main__':
     parser.add_argument('--top_k', type=int, default=40)
     parser.add_argument('--do_top_p', action='store_true')
     parser.add_argument('--top_p', type=float, default=0.96)
+    parser.add_argument('--do_typical_p', action='store_true')
+    parser.add_argument('--typical_p', type=float, default=0.96)
     parser.add_argument('--output_name', type=str, default="")
     parser.add_argument('--openai_model', type=str, default=None)
     parser.add_argument('--openai_key', type=str)
